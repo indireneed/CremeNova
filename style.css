@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500&family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+:root {
+    --primary-text: #222;
+    --accent-teal: #008080;
+    --accent-gold: #B38B59;
+    --bg-white: #FFFFFF;
+    --bg-light-grey: #F5F5F5;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-text);
+    background-color: var(--bg-white);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--primary-text);
+}
+a {
+    color: var(--accent-terracotta);
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-brown);
+}
+
+.btn-primary {
+    background-color: var(--accent-terracotta);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-brown);
+}
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+}
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card .p-6 {
+    padding: 1.5rem;
+}
+
+.recipe-card h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.recipe-card p {
+    margin-bottom: 1rem;
+    color: #4b5563;
+}
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar spacing */
+nav {
+  width: 100%;
+}
+
+nav .container {
+  width: 100%;
+}
+.mobile-menu {
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu.active {
+    display: block;
+}
+.accent-bg {
+    background-color: var(--accent-pink);
+}
