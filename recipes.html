@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes | CremeNova</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        },
+                        secondary: {
+                            50: '#f5f9ff',
+                            100: '#ebf3ff',
+                            200: '#cde0ff',
+                            300: '#afceff',
+                            400: '#74a9ff',
+                            500: '#3884ff',
+                            600: '#3277e6',
+                            700: '#2a63bf',
+                            800: '#224f99',
+                            900: '#1b417d',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .logo-font {
+            font-family: 'Pacifico', cursive;
+        }
+        
+        .recipe-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="index.html" class="flex items-center py-4 px-2">
+                            <span class="logo-font text-3xl text-primary-600">CremeNova</span>
+                        </a>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-primary-500 transition duration-300">Home</a>
+                        <a href="recipes.html" class="py-4 px-2 text-primary-600 border-b-4 border-primary-600 font-semibold">Recipes</a>
+                        <a href="contact.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-primary-500 transition duration-300">Contact</a>
+                    </div>
+</div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <i data-feather="menu" class="text-gray-500 hover:text-primary-500"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="">
+                <li><a href="index.html" class="block text-sm px-2 py-4 hover:bg-primary-500 transition duration-300">Home</a></li>
+                <li class="active"><a href="recipes.html" class="block text-sm px-2 py-4 text-white bg-primary-500 font-semibold">Recipes</a></li>
+                <li><a href="contact.html" class="block text-sm px-2 py-4 hover:bg-primary-500 transition duration-300">Contact</a></li>
+</ul>
+        </div>
+    </nav>
+
+    <!-- Recipes Hero -->
+    <div class="bg-gradient-to-r from-primary-600 to-secondary-600 py-20 px-4 text-center">
+<h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Delicious Baking Recipes</h1>
+        <p class="text-xl text-white max-w-2xl mx-auto">Explore our collection of premium recipes to inspire your next baking adventure</p>
+    </div>
+
+    <!-- Recipes Section -->
+    <section class="py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Recipe 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 recipe-card">
+                    <img src="http://static.photos/food/640x360/10" alt="Chocolate Cake" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Decadent Chocolate Cake</h3>
+                            <span class="bg-primary-100 text-primary-600 text-xs px-2 py-1 rounded-full">Premium</span>
+</div>
+                        <div class="flex items-center mb-4 text-sm text-gray-500">
+                            <i data-feather="clock" class="w-4 h-4 mr-1"></i> 1h 30m
+                            <span class="mx-2">•</span>
+                            <i data-feather="users" class="w-4 h-4 mr-1"></i> Serves 8
+                        </div>
+                        <p class="text-gray-600 mb-4">Rich, moist chocolate cake with a silky ganache frosting</p>
+                        <a href="#" class="text-primary-500 font-medium hover:text-primary-600 flex items-center">
+View Recipe <i data-feather="arrow-right" class="ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Recipe 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 recipe-card">
+                    <img src="http://static.photos/food/640x360/11" alt="Macarons" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">French Macarons</h3>
+                            <span class="bg-primary-100 text-primary-800 text-xs px-2 py-1 rounded-full">Premium</span>
+                        </div>
+                        <div class="flex items-center mb-4 text-sm text-gray-500">
+                            <i data-feather="clock" class="w-4 h-4 mr-1"></i> 2h
+                            <span class="mx-2">•</span>
+                            <i data-feather="users" class="w-4 h-4 mr-1"></i> Makes 24
+                        </div>
+                        <p class="text-gray-600 mb-4">Delicate almond meringue cookies with buttercream filling</p>
+                        <a href="#" class="text-primary-600 font-medium hover:text-primary-700 flex items-center">
+                            View Recipe <i data-feather="arrow-right" class="ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Recipe 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 recipe-card">
+                    <img src="http://static.photos/food/640x360/12" alt="Sourdough Bread" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Artisan Sourdough</h3>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Beginner</span>
+                        </div>
+                        <div class="flex items-center mb-4 text-sm text-gray-500">
+                            <i data-feather="clock" class="w-4 h-4 mr-1"></i> 24h+
+                            <span class="mx-2">•</span>
+                            <i data-feather="users" class="w-4 h-4 mr-1"></i> 1 loaf
+                        </div>
+                        <p class="text-gray-600 mb-4">Classic sourdough with perfect crust and airy crumb</p>
+                        <a href="#" class="text-primary-600 font-medium hover:text-primary-700 flex items-center">
+                            View Recipe <i data-feather="arrow-right" class="ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Recipe 4 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 recipe-card">
+                    <img src="http://static.photos/food/640x360/13" alt="Croissants" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Buttery Croissants</h3>
+                            <span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full">Advanced</span>
+                        </div>
+                        <div class="flex items-center mb-4 text-sm text-gray-500">
+                            <i data-feather="clock" class="w-4 h-4 mr-1"></i> 8h
+                            <span class="mx-2">•</span>
+                            <i data-feather="users" class="w-4 h-4 mr-1"></i> Makes 12
+                        </div>
+                        <p class="text-gray-600 mb-4">Flaky, layered French croissants with perfect lamination</p>
+                        <a href="#" class="text-primary-600 font-medium hover:text-primary-700 flex items-center">
+                            View Recipe <i data-feather="arrow-right" class="ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Recipe 5 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 recipe-card">
+                    <img src="http://static.photos/food/640x360/14" alt="Red Velvet Cupcakes" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Red Velvet Cupcakes</h3>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Beginner</span>
+                        </div>
+                        <div class="flex items-center mb-4 text-sm text-gray-500">
+                            <i data-feather="clock" class="w-4 h-4 mr-1"></i> 45m
+                            <span class="mx-2">•</span>
+                            <i data-feather="users" class="w-4 h-4 mr-1"></i> Makes 12
+                        </div>
+                        <p class="text-gray-600 mb-4">Classic red velvet with cream cheese frosting</p>
+                        <a href="#" class="text-primary-600 font-medium hover:text-primary-700 flex items-center">
+                            View Recipe <i data-feather="arrow-right" class="ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Recipe 6 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 recipe-card">
+                    <img src="http://static.photos/food/640x360/15" alt="Tarte Tatin" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Apple Tarte Tatin</h3>
+                            <span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full">Advanced</span>
+                        </div>
+                        <div class="flex items-center mb-4 text-sm text-gray-500">
+                            <i data-feather="clock" class="w-4 h-4 mr-1"></i> 1h 15m
+                            <span class="mx-2">•</span>
+                            <i data-feather="users" class="w-4 h-4 mr-1"></i> Serves 6
+                        </div>
+                        <p class="text-gray-600 mb-4">Upside-down caramelized apple tart with puff pastry</p>
+                        <a href="#" class="text-primary-600 font-medium hover:text-primary-700 flex items-center">
+                            View Recipe <i data-feather="arrow-right" class="ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <button class="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2 px-6 rounded-full transition-all inline-flex items-center">
+Load More Recipes <i data-feather="plus" class="ml-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="bg-gray-100 py-16 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">Get Weekly Baking Inspiration</h2>
+            <p class="text-gray-600 mb-8 max-w-2xl mx-auto">Sign up for our newsletter to receive exclusive recipes, baking tips, and special offers.</p>
+            <div class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                <input type="email" placeholder="Your email address" class="px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary-500 flex-grow">
+                <button class="bg-primary-500 hover:bg-primary-600 text-white font-medium py-3 px-6 rounded-full transition-all">Subscribe</button>
+</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 logo-font">CremeNova</h3>
+                    <p class="text-gray-400">Elevating baking experiences with premium tools since 2015.</p>
+                    <div class="flex space-x-4 mt-6">
+                        <a href="#" class="text-gray-400 hover:text-primary-300 transition-all">
+<i data-feather="facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i data-feather="instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i data-feather="twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Recipes</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-primary-300 transition-all">Cakes</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary-300 transition-all">Pastries</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary-300 transition-all">Breads</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary-300 transition-all">Cookies</a></li>
+</ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Help</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-primary-300 transition-all">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary-300 transition-all">FAQs</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary-300 transition-all">Shipping Info</a></li>
+</ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-primary-300 transition-all">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary-300 transition-all">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary-300 transition-all">Careers</a></li>
+</ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 CremeNova. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+
+        // Initialize feather icons
+        feather.replace();
+    </script>
+</body>
+</html>
